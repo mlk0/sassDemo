@@ -1,33 +1,42 @@
-﻿
+﻿$body-background-color : beige;
+$font-size : 12pt;
+$document-background-color : saddlebrown;
+$titles-color:chocolate;
+$accented-font-style: italic;
+$bolded-color: crimson;
+$like-button-color: burlywood;
+$dislike-button-color: khaki;
+$button-width:40pt;
+$button-padding: 5px 0px 5px 10px;
 
 body {
-    background-color: beige;
-    font-size: 12pt;
-    color: saddlebrown;
+    background-color: $body-background-color;
+    font-size: $font-size;
+    color: $document-background-color;
 }
 
 h1 {
-    color: chocolate;
+    color: $titles-color;
 }
 
 .subtitle-text {
-    color: chocolate;
-    font-style: italic;
+    color: $titles-color;
+    font-style: $accented-font-style;
 }
 
 b {
-    color: crimson;
-    font-style: italic;
+    color: $bolded-color;
+    font-style: $accented-font-style;
 }
 
 .like-button {
-    background-color: burlywood;
-    width: 40pt;
-    padding: 5px 0px 5px 10px;
+    background-color: $like-button-color;
+    width: $button-width;
+    padding: $button-padding;
 }
 
 .dislike-button {
-    background-color: khaki;
-    width: 40pt;
-    padding: 5px 0px 5px 10px;
+    background-color: $dislike-button-color;
+    width: $button-width;
+    padding: $button-padding;
 }
