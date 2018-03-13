@@ -51,3 +51,47 @@ b {
 
 
 
+
+
+
+//nested rules
+$list-background-color: lightpink;
+$list-width: 300pt;
+$list-font-family: Verdana;
+$list-item-background-color: peachpuff;
+$list-item-width: 200pt;
+$list-accented-font-style: italic;
+$list-item-paragraph-color: deeppink;
+$list-item-image-color: antiquewhite;
+$list-item-image-height: 100pt;
+$list-item-image-width: 150pt;
+
+
+div.list-section {
+    background-color: $list-background-color;
+    width: $list-width;
+    padding: $button-padding;
+}
+
+div.list-section ul {
+    font-family: $list-font-family;
+}
+
+div.list-section ul li.list-item {
+    background-color: $list-item-background-color;
+    width: $list-item-width;
+}
+
+div.list-section ul li.list-item h3 {
+    font-style: $list-accented-font-style;
+}
+
+div.list-section ul li.list-item p {
+    color: $list-item-paragraph-color;
+}
+
+div.list-section ul li.list-item img {
+    background-color: $list-item-image-color;
+    height: $list-item-image-height;
+    width: $list-item-image-width;
+}

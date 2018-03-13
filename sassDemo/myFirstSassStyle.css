@@ -26,3 +26,26 @@ b {
   padding: 5px 0px 5px 10px;
   background-color: khaki; }
 
+div.list-section {
+  background-color: lightpink;
+  width: 300pt;
+  padding: 5px 0px 5px 10px; }
+
+div.list-section ul {
+  font-family: Verdana; }
+
+div.list-section ul li.list-item {
+  background-color: peachpuff;
+  width: 200pt; }
+
+div.list-section ul li.list-item h3 {
+  font-style: italic; }
+
+div.list-section ul li.list-item p {
+  color: deeppink; }
+
+div.list-section ul li.list-item img {
+  background-color: antiquewhite;
+  height: 100pt;
+  width: 150pt; }
+
