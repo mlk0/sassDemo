@@ -7,14 +7,14 @@ h1 {
   color: chocolate; }
 
 .subtitle-text {
-  color: chocolate;
   font-style: italic;
-  font-family: "Agency FB"; }
+  font-family: "Agency FB";
+  color: chocolate; }
 
 b {
-  color: crimson;
   font-style: italic;
-  font-family: "Agency FB"; }
+  font-family: "Agency FB";
+  color: crimson; }
 
 .like-button {
   background-color: burlywood;
