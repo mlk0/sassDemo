@@ -84,6 +84,8 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="_variables.scss" />
+    <Content Include="_mixins.scss" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />

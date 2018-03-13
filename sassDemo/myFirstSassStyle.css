@@ -26,6 +26,18 @@ b {
   padding: 5px 0px 5px 10px;
   background-color: khaki; }
 
+.dashed-list-item-border {
+  border: dashed;
+  margin: 10px; }
+
+.dotted-list-item-border {
+  border: dotted;
+  margin: 13px; }
+
+.double-list-item-border {
+  border: double;
+  margin: 8px; }
+
 div.list-section {
   background-color: lightpink;
   width: 300pt;
