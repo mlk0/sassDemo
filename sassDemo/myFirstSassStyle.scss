@@ -10,9 +10,10 @@ $dislike-button-color: khaki;
 $button-width:40pt;
 $button-padding: 5px 0px 5px 10px;
 
-@mixin accentedText() {
+@mixin accentedText($accent-color) {
     font-style: $accented-font-style;
     font-family: $accented-font-family;
+    color : $accent-color;
 }
 
 @mixin buttonLayout($button-background-color) {
@@ -33,14 +34,11 @@ h1 {
 }
 
 .subtitle-text {
-    @include accentedText;
-    color: $titles-color;
-    
+    @include accentedText($titles-color);
 }
 
 b {
-    @include accentedText;
-    color: $bolded-color;
+    @include accentedText($bolded-color);
 }
 
 .like-button {
