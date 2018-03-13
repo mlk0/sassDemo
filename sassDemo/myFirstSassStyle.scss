@@ -28,21 +28,7 @@ b {
     @include buttonLayout($dislike-button-color);
 }
 
-//various bordered list items
-.dashed-list-item-border {
-    border: dashed;
-    margin: 10px;
-}
 
-.dotted-list-item-border {
-    border: dotted;
-    margin: 13px;
-}
-
-.double-list-item-border {
-    border: double;
-    margin: 8px;
-}
 
 
 
@@ -75,6 +61,26 @@ div.list-section {
             }
         }
     }
+}
+
+
+//various bordered list items
+.dashed-list-item-border {
+    @extend .list-item;
+    border: dashed;
+    margin: 10px;
+}
+
+.dotted-list-item-border {
+    @extend .list-item;
+    border: dotted;
+    margin: 13px;
+}
+
+.double-list-item-border {
+    @extend .list-item;
+    border: double;
+    margin: 8px;
 }
 
 

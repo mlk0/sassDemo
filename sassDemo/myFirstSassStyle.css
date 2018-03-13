@@ -26,6 +26,24 @@ b {
   padding: 5px 0px 5px 10px;
   background-color: khaki; }
 
+div.list-section {
+  background-color: lightpink;
+  width: 300pt;
+  padding: 5px 0px 5px 10px; }
+  div.list-section ul {
+    font-family: Verdana; }
+    div.list-section ul li.list-item, div.list-section ul li.dashed-list-item-border, div.list-section ul li.dotted-list-item-border, div.list-section ul li.double-list-item-border {
+      background-color: peachpuff;
+      width: 200pt; }
+      div.list-section ul li.list-item h3, div.list-section ul li.dashed-list-item-border h3, div.list-section ul li.dotted-list-item-border h3, div.list-section ul li.double-list-item-border h3 {
+        font-style: italic; }
+      div.list-section ul li.list-item p, div.list-section ul li.dashed-list-item-border p, div.list-section ul li.dotted-list-item-border p, div.list-section ul li.double-list-item-border p {
+        color: deeppink; }
+      div.list-section ul li.list-item img, div.list-section ul li.dashed-list-item-border img, div.list-section ul li.dotted-list-item-border img, div.list-section ul li.double-list-item-border img {
+        background-color: antiquewhite;
+        height: 100pt;
+        width: 150pt; }
+
 .dashed-list-item-border {
   border: dashed;
   margin: 10px; }
@@ -37,22 +55,4 @@ b {
 .double-list-item-border {
   border: double;
   margin: 8px; }
-
-div.list-section {
-  background-color: lightpink;
-  width: 300pt;
-  padding: 5px 0px 5px 10px; }
-  div.list-section ul {
-    font-family: Verdana; }
-    div.list-section ul li.list-item {
-      background-color: peachpuff;
-      width: 200pt; }
-      div.list-section ul li.list-item h3 {
-        font-style: italic; }
-      div.list-section ul li.list-item p {
-        color: deeppink; }
-      div.list-section ul li.list-item img {
-        background-color: antiquewhite;
-        height: 100pt;
-        width: 150pt; }
 
