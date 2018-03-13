@@ -1,16 +1,5 @@
 ﻿@import '_variables.scss';
-
-@mixin accentedText($accent-color) {
-    font-style: $accented-font-style;
-    font-family: $accented-font-family;
-    color : $accent-color;
-}
-
-@mixin buttonLayout($button-background-color) {
-    width: $button-width;
-    padding: $button-padding;
-    background-color: $button-background-color;
-}
+@import '_mixins.scss';
 
 
 body {
