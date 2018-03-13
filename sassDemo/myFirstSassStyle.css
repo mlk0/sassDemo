@@ -8,11 +8,13 @@ h1 {
 
 .subtitle-text {
   color: chocolate;
-  font-style: italic; }
+  font-style: italic;
+  font-family: "Agency FB"; }
 
 b {
   color: crimson;
-  font-style: italic; }
+  font-style: italic;
+  font-family: "Agency FB"; }
 
 .like-button {
   background-color: burlywood;

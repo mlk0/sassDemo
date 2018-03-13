@@ -3,6 +3,7 @@ $font-size : 12pt;
 $document-background-color : saddlebrown;
 $titles-color:chocolate;
 $accented-font-style: italic;
+$accented-font-family: 'Agency FB' ;
 $bolded-color: crimson;
 $like-button-color: burlywood;
 $dislike-button-color: khaki;
@@ -22,11 +23,13 @@ h1 {
 .subtitle-text {
     color: $titles-color;
     font-style: $accented-font-style;
+    font-family:$accented-font-family;
 }
 
 b {
     color: $bolded-color;
     font-style: $accented-font-style;
+    font-family: $accented-font-family;
 }
 
 .like-button {
