@@ -15,6 +15,12 @@ $button-padding: 5px 0px 5px 10px;
     font-family: $accented-font-family;
 }
 
+@mixin buttonLayout() {
+    width: $button-width;
+    padding: $button-padding;
+}
+
+
 body {
     background-color: $body-background-color;
     font-size: $font-size;
@@ -38,12 +44,10 @@ b {
 
 .like-button {
     background-color: $like-button-color;
-    width: $button-width;
-    padding: $button-padding;
+    @include buttonLayout;
 }
 
 .dislike-button {
     background-color: $dislike-button-color;
-    width: $button-width;
-    padding: $button-padding;
+    @include buttonLayout;
 }
