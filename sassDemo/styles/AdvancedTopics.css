@@ -1,0 +1,19 @@
+﻿.container {
+  background-color: beige;
+  width: 630px;
+  padding: 5px;
+  height: 20px; }
+
+.column, .col1, .col2, .col3 {
+  width: 200px;
+  float: left; }
+
+.col1 {
+  background-color: red; }
+
+.col2 {
+  background-color: green; }
+
+.col3 {
+  background-color: blue; }
+

@@ -2,5 +2,9 @@
   {
     "outputFile": "myFirstSassStyle.css",
     "inputFile": "myFirstSassStyle.scss"
+  },
+  {
+    "outputFile": "styles/AdvancedTopics.css",
+    "inputFile": "styles/AdvancedTopics.scss"
   }
 ]

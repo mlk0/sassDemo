@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MathematicalCalculations.html" />
     <Content Include="myFirstSassStyle.css">
       <DependentUpon>myFirstSassStyle.scss</DependentUpon>
     </Content>
@@ -78,6 +79,13 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <Content Include="styles\AdvancedTopics.css">
+      <DependentUpon>AdvancedTopics.scss</DependentUpon>
+    </Content>
+    <Content Include="styles\AdvancedTopics.min.css">
+      <DependentUpon>AdvancedTopics.css</DependentUpon>
+    </Content>
+    <Content Include="styles\AdvancedTopics.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
