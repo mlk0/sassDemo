@@ -17,3 +17,14 @@
 .col3 {
   background-color: blue; }
 
+.parent-selectors {
+  border: dashed;
+  /*a:hover {
+        color: chocolate;
+        font-style: italic;
+    }*/ }
+  .parent-selectors ul li a {
+    color: crimson; }
+  .parent-selectors ul li a:hover {
+    color: green; }
+

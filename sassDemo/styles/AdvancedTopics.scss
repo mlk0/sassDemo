@@ -1,4 +1,5 @@
 ﻿
+//mathematical calculations
 $container-margin-right : 30px;
 $number-of-columns : 3;
 $column-width : 200px;
@@ -32,3 +33,29 @@ $container-width: $number-of-columns * $column-width + $container-margin-right;
     @extend .column;
     background-color: blue;
 }
+
+
+//parent selectors
+.parent-selectors {
+    // color:chocolate;
+    // font-style:italic;
+    border: dashed;
+
+    ul {
+        li {
+            a {
+                color: crimson;
+            }
+
+            a:hover {
+                color: green;
+            }
+        }
+    }
+    /*a:hover {
+        color: chocolate;
+        font-style: italic;
+    }*/
+}
+
+
