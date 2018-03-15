@@ -1,8 +1,8 @@
 ﻿
 //mathematical calculations
-$container-margin-right : 30px;
-$number-of-columns : 3;
-$column-width : 200px;
+$container-margin-right: 30px;
+$number-of-columns: 3;
+$column-width: 200px;
 $container-width: $number-of-columns * $column-width + $container-margin-right;
 
 .container {
@@ -12,14 +12,14 @@ $container-width: $number-of-columns * $column-width + $container-margin-right;
     height: 20px;
 }
 
-.column{
-    width : $column-width;
-    float : left;
+.column {
+    width: $column-width;
+    float: left;
 }
 
-.col1{
+.col1 {
     @extend .column;
-    background-color:red;
+    background-color: red;
 }
 
 
@@ -36,9 +36,9 @@ $container-width: $number-of-columns * $column-width + $container-margin-right;
 
 
 //parent selectors
+//the following is one way (I believe the correct one)
+//to provide nested styles
 .parent-selectors {
-    // color:chocolate;
-    // font-style:italic;
     border: dashed;
 
     ul {
@@ -50,12 +50,87 @@ $container-width: $number-of-columns * $column-width + $container-margin-right;
             a:hover {
                 color: green;
             }
+
+            a:visited {
+                color: cornflowerblue;
+            }
         }
     }
-    /*a:hover {
-        color: chocolate;
-        font-style: italic;
-    }*/
 }
 
+.checkbox-group {
+    border: inset;
+}
 
+.radio-group {
+    border: groove;
+}
+
+.font-italic{
+
+}
+//but when there is no real nesting, at the last node a:hover or a:visited
+//can not be applied and &: needs to be used to pull "ul li a"
+.parent-selectors-v2 {
+    border: dotted;
+
+    ul li a {
+        color: brown;
+
+        &:hover {
+            color: pink;
+        }
+
+        &:visited {
+            color: dimgray;
+        }
+        //this one is saying that if at any level above the "&", which is the parent
+        //there is a class attached with name has-validation-errors
+        //in that case the font will become italic
+        //in this case this upper element can be the enclosing div or the body
+        .has-validation-errors & {
+            font-style: italic;
+        }
+        //in the following case, it is very specific that the
+        //has-info-message needs to be applied to any upper div element
+        //applying it to the body, or any other type of html tag,  should not have any effect
+        div.has-info-message & {
+            font-size: large;
+        }
+    }
+    //inline - no nesting
+    /*div.checkbox-group input:checked {
+        opacity: 0.3
+    }
+
+    div.radio-group input :checked {
+        display: none;
+    }*/
+    //semi-nesting
+    /*div.checkbox-group input {
+        &:checked {
+            opacity: 0.3
+        }
+    }
+    div.radio-group input {
+        &:checked {
+            display: none;
+        }
+    }*/
+    //max nesting
+    div.checkbox-group {
+        input {
+            &:checked {
+                opacity: 0.3
+            }
+        }
+    }
+
+    div.radio-group {
+        input {
+            &:checked {
+                display: none;
+            }
+        }
+    }
+}

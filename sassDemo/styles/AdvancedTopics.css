@@ -18,13 +18,51 @@
   background-color: blue; }
 
 .parent-selectors {
-  border: dashed;
-  /*a:hover {
-        color: chocolate;
-        font-style: italic;
-    }*/ }
+  border: dashed; }
   .parent-selectors ul li a {
     color: crimson; }
   .parent-selectors ul li a:hover {
     color: green; }
+  .parent-selectors ul li a:visited {
+    color: cornflowerblue; }
+
+.checkbox-group {
+  border: inset; }
+
+.radio-group {
+  border: groove; }
+
+.parent-selectors-v2 {
+  border: dotted;
+  /*div.checkbox-group input:checked {
+        opacity: 0.3
+    }
+
+    div.radio-group input :checked {
+        display: none;
+    }*/
+  /*div.checkbox-group input {
+        &:checked {
+            opacity: 0.3
+        }
+    }
+    div.radio-group input {
+        &:checked {
+            display: none;
+        }
+    }*/ }
+  .parent-selectors-v2 ul li a {
+    color: brown; }
+    .parent-selectors-v2 ul li a:hover {
+      color: pink; }
+    .parent-selectors-v2 ul li a:visited {
+      color: dimgray; }
+    .has-validation-errors .parent-selectors-v2 ul li a {
+      font-style: italic; }
+    div.has-info-message .parent-selectors-v2 ul li a {
+      font-size: large; }
+  .parent-selectors-v2 div.checkbox-group input:checked {
+    opacity: 0.3; }
+  .parent-selectors-v2 div.radio-group input:checked {
+    display: none; }
 
